@@ -28,7 +28,7 @@ function App() {
           <input 
             type="text"
             className="search-bar"
-            placeholder="Type location here..."
+            placeholder="Type your location here..."
             onChange={e => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}
@@ -44,21 +44,13 @@ function App() {
             <div className="temp">
               {Math.round(weather.main.temp)}°c
             </div>
+            <div className="temp2">
+              Feels like {Math.round(weather.main.feels_like)}°c
+            </div>
             <div className="weather">{weather.weather[0].main}</div>
           </div>
         </div>
         ) : ('')}
-        {/* <div>
-          <div className="location-box">
-            <div className="location">Ottawa, Canada</div>
-          </div>
-          <div className="weather-box">
-            <div className="temp">
-              15°c
-            </div>
-            <div className="weather">Sunny</div>
-          </div>
-        </div> */}
       </main>
     </div>
   );

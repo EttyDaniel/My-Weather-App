@@ -93,6 +93,12 @@ main {
   box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
 
+.temp2{
+  color: #FFF;
+  font-size: 25px;
+  font-weight: 500;
+}
+
 .weather-box .weather {
   color: #FFF;
   font-size: 48px;
